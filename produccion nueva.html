@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+#uno{
+    background: -webkit-radial-gradient(left, rgb(0, 255, 255), blue, rgb(114, 114, 62));
+        padding: 50PX;
+        font-size: 50px;
+        text-shadow: 4px 5px 1px pink;
+        margin: 50px;
+        box-shadow: 4px 10px 6px rgb(0, 0, 0);
+        animation-duration:5s ;
+        animation-iteration-count: infinite;
+
+     }
+     @keyframes fernando{
+     40% {
+        background-color:cyan;
+        transform: scale(2);
+     }
+     }
+#dos{
+    background: -webkit-radial-gradient(left, rgb(0, 255, 255), blue, rgb(114, 114, 62));
+        padding: 30PX;
+        font-size: 30px;
+        text-shadow: 4px 5px 1px pink;
+        margin: 20px;
+        box-shadow: 4px 10px 6px rgb(0, 0, 0);
+        transition: all 3s;
+}
+#dos:hover{
+            background: red;
+            transform: translate(50px, 100px) scale(1.25);
+            box-shadow: 4px 10px 6px rgb(255, 255, 255);
+         text-shadow: 4px 5px 1px red
+}
+#tres{
+ padding: 20PX;
+        font-size: 50px;
+        text-shadow: 4px 5px 1px pink;
+        margin: 50px;
+background:red;
+margin: 50px auto;
+transition: transform 0.4s ease;
+}
+#tres:hover{
+    transform:scale(1.2) rotate(15deg) translateX(50px)
+}
+#cuatro{
+        background: blue;
+        padding: 30PX;
+        font-size: 40px;
+        text-shadow: 4px 5px 1px pink;
+        margin: 20px;
+        box-shadow: 4px 10px 6px rgb(0, 0, 0);
+        animation: mover 2s infinite alternate ease-in-out;
+}
+@keyframes mover{
+    20%{ background: yellow;}
+    40% {background:cyan;}
+    60%{ background: red;}
+    80%{background: green;}
+    0% {transform: translate(0);}
+    100% {transform: translate(200px);}
+
+}
+}
+
+
+    </style>
+</head>
+<body>
+    <H1 id="uno">MOMASOS.EXE</H1>
+    <p id="dos">1.Gato sigma</p>
+    <p id="tres">2.Skibidi Sigma Pomni </p>
+    <p id="cuatro">3.Sigan viendo </p>
+</body>
+</html>

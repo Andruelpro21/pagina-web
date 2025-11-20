@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            display: grid;
+            grid-template-rows:160px 200px 400px 200px;
+            grid-template-columns: 50% 50%;
+            grid-template-areas: 
+            "uno uno"
+            "dos dos"
+            "tres cua"
+            "cinco cinco"
+
+        }
+        #uno{
+            grid-area: uno;
+            background-color: blue;
+            font-size: 50px;
+            background-image: url(3.jpg);
+            background-size: 20%;
+           
+            height: 1000px;
+            width: 2100px;
+            
+            font-size: 35px;
+            
+            
+        }
+        #dos{
+            grid-area: dos;
+            background-color: blueviolet;
+            font-size: 20px;
+        }
+        #tres{
+            background-image: url(2.jpg);
+            font-size: 20px;
+            background-repeat: no-repeat;
+            background-size: 70%;
+        }
+        #cuatro{
+          
+            background-image: url(4.jpg);
+            font-size: 20px;
+            background-repeat: no-repeat;
+            background-size: 70%;
+            
+            color: aliceblue;
+
+        }
+        #cinco{
+            font-size: 22px;
+            grid-area: cinco;
+            background-color: rgb(78, 78, 219);
+            color: aqua;
+        }
+        nav{
+            display: flex;
+            justify-content: space-between;
+        }
+        @media(max-width:900px){
+         #dos{
+        background-color: red;
+        }
+        }
+        
+        #OwO{grid-area: dos;
+            display: flex;
+            justify-content: space-between;
+        }
+        #yo{
+        background-color: blue;
+          width: 100px;
+            height: 100px;
+            font-size: 35px;
+        }
+    </style>
+</head>
+<body>
+    
+    <section id="uno">GATOS SIAMESES >:D</section>
+    <section id="dos">Menu</section>
+    <section id="tres">Izquierda</section>
+    <section id="cuatro">Derecha</section>
+    <section id="cinco">El siamés es una raza de gato. Dentro de dicha raza se distinguen dos variedades: por un lado el siamés moderno, y por otro el siamés tradicional o Thai,El siamés es afectuoso y sociable, y puede adaptarse sin problemas a la vida familiar.Los gatos siameses cuestan entre $500 y $2,800 dependiendo del criador y el color. Los gatos siameses son conocidos por sus cuerpos elegantes y sus ojos azules en forma de almendra. Los gatos siameses son vocales y conocidos por su fuerte apego a sus dueños</section>
+    <nav id="OwO">
+    <p id="yo">Inicio</p>
+    <p id="yo">Buscar</p>
+    <p id="yo">Registrarse</p>
+    <p id="yo">Iniciar Sesion</p>
+    <p id="yo">Servivios</p>
+    </nav>
+
+</body>
+</html>

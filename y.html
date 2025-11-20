@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+     body{
+            display: grid;
+            grid-template-rows:160px 200px 400px 200px;
+            grid-template-columns: 30% 30% 30%;
+            grid-template-areas: 
+            "uno uno uno"
+            "dos tres cuatro " 
+            "cinco cinco cinco"
+           
+        }
+        #uno{
+            grid-area: uno;
+            background-color: blue;
+        }
+        #dos{
+            grid-area: dos;
+            background-color: red;
+        }
+        #tres{
+            grid-area: tres;
+            background-color: yellow;
+        }
+        #cuatro{
+            grid-area: cuatro;
+            background-color: rgb(0, 116, 124);
+        }
+        #cinco{
+            grid-area: cinco;
+            background-color: rgb(0, 100, 17);
+        }
+        @media(max-width:700px){
+         #dos{
+        background-color: blue;
+        }
+        #uno{
+            background-color: red;
+        }
+        #tres{
+              background-color: rgb(0, 116, 124);
+            
+        }
+        #cuatro{
+            background-color: yellow;
+        }
+        #cinco{
+            background-color: black;
+        }
+    }
+    </style>
+</head>
+<body>
+    <section id="uno">1</section>
+    <section id="dos">2</section>
+    <section id="tres">3</section>
+    <section id="cuatro">4</section>
+    <section id="cinco">5</section>
+    <nav id="OwO">
+    <p id="yo">1</p>
+    <p id="yo">2</p>
+    <p id="yo">3</p>
+    <p id="yo">4</p>
+    <p id="yo">5</p>
+    </nav>
+</body>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        header{
+            background: red;
+            grid-area: he;
+        }
+        #uno{
+            background: blue;
+            grid-area: uno;
+        }
+        #dos{
+            background: yellow;
+            grid-area: dos;
+        }
+        #tres{
+            background: green;
+            grid-area: tres;
+        }
+        aside{
+            background: purple;
+            grid-area: cu;
+        }
+        footer{
+            background: aqua;
+            grid-area: ci;
+        }
+        body{
+            display: grid;
+            grid-template-rows: 200px 600px 300px;
+            grid-template-columns: 25% 25% 25% 25%;
+            grid-template-areas: 
+            "he he he he"
+            "uno dos dos tres"
+            "cu cu ci ci";
+
+        }
+    </style>
+</head>
+<body>
+    <header>1</header>
+    <section id="uno">2</section>
+    <section id="dos">3</section>
+    <section id="tres">4</section>
+    <aside>5</aside>
+    <footer>6</footer>
+</body>
+</html>

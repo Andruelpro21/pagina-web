@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+        display: grid;
+            grid-template-rows:160px 200px 400px 200px;
+            grid-template-columns: 25% 50% 25%;
+            grid-template-areas: 
+            "uno uno uno"
+            "dos dos dos"
+            "tres cua cinco"
+            "seis seis seis";
+            gap: 7px;
+        }
+        #uno{
+            grid-area: uno;
+            background: red;
+        }
+        #dos{
+            grid-area: dos;
+            background: rgb(47, 0, 255);
+        }
+        #tres{
+            grid-area: tres;
+            background: yellow;
+        }
+        #cuatro{
+            grid-area: cua;
+            background:green ;
+        }
+        #cinco{
+            grid-area: cinco;
+            background: rgb(0, 183, 255);
+        }
+        #seis{
+            grid-area: seis;
+            background: orange;
+        }
+@media(max-width:500px) {
+    body{
+        display: grid;
+            grid-template-rows:160px 200px 400px 200px;
+            grid-template-columns: 50% 50%;
+            grid-template-areas: 
+            "uno dos "
+            "tres cua "
+            "cinco seis ";
+            gap:7px;
+        }
+        #uno{
+            grid-area: uno;
+            background: red;
+        }
+        #dos{
+            grid-area: dos;
+            background: purple;
+        }
+        #tres{
+            grid-area: tres;
+            background: yellow;
+        }
+        #cuatro{
+            grid-area: cua;
+            background:green ;
+        }
+        #cinco{
+            grid-area: cinco;
+            background: grey;
+        }
+        #seis{
+            grid-area: seis;
+            background: orange;
+        }
+    
+}
+    </style>
+</head>
+<body>
+    <p id="uno">1</p>
+    <p id="dos">2</p>
+    <p id="tres">3</p>
+    <p id="cuatro">4</p>
+    <p id="cinco">5</p>
+    <p id="seis">6</p>
+</body>
+</html>

@@ -1,0 +1,688 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DragonIce</title>
+    <link rel="stylesheet" href="Helado.jpg">
+<style>
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration:none ;
+    list-style: none;
+
+}
+body{
+    font-family: "Poppins",sans-serif;
+    background-color: rgb(130, 226, 226);
+}
+img{
+    max-width: 100%;
+}
+
+.container{
+max-width: 1200px;
+margin: 0 auto;
+}
+.header{
+    background: linear-gradient(
+        rgba(0,0,0,0.4),
+        rgba(0,0,0,0.4)
+    ),
+    url(bg.jpg);
+    background-position:center center ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    min-height: 70vh;
+    padding: 50px 0 0 0;
+}
+.menu{
+position: absolute;
+top: 0;
+left: 0;
+right: 0;
+display: flex;
+align-items: center;
+justify-content: space-between;
+}
+.logo{
+    right: 250px;
+    width: 250px;
+}
+
+.menu .navbar ul li{
+    position: relative;
+    float: left;
+}
+
+.menu .navbar ul li a{
+font-size: 18px;
+padding: 20px;
+color: #FFFFFF;
+display: block;
+font-weight: 600;
+}
+.menu .navbar ul li a:hover {
+ color: rgb(214, 252, 3);    
+
+}
+#menu{
+    display: none;
+}
+#menu-icono{
+width: 25px;
+}
+#menu label{
+    cursor: pointer;
+    display: none;
+}
+.header-txt{
+    text-align: center;
+}
+.header-txt h1{
+    font-size: 75px;
+    font-family: "Satisfy",cursive;
+    color: #FFFFFF;
+    line-height: 1;
+    margin-bottom: 15px;
+}
+
+.header-txt p{
+    font-size: 35px;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.information-content{
+    display: flex;
+    justify-content: space-between;
+    box-shadow: 0 0 20px rgba(0,0,0,0.2);
+    margin-top: -50px;
+}
+
+.information-1{
+    flex-basis: 45px;
+    text-align: center;
+    background-color: #FFFFFF;
+    height: 300px;
+}
+
+h3{
+    font-size: 40px;
+    font-family: 'Courier New', Courier, monospace;
+    margin-bottom: 15px;
+    color: rgb(0, 0, 0);
+}
+
+.information-2 {
+    flex-basis: 50%;
+    text-align: center;
+    flex-basis: 45px;
+    background-color: #FFFFFF;
+    
+   
+}
+
+.information-b1{
+    height: 250px;
+    width: 500px;
+    
+}
+
+.information-a1{
+    height: 300px;
+    width: 500px;
+    
+}
+
+.information-b1 img{
+    height: 300px;
+    width: 500px;
+}
+
+.information-b1{
+    height: 300px;
+    width: 500px;
+}
+
+.information-a1 img{
+    height: 300px;
+    width: 100%;
+    
+    
+}
+
+.btn-1{
+    display: inline-block;
+    padding: 11px 35px;
+    border: 2px solid rgb(137, 255, 239);
+    margin-top: 10px;
+    color: aquamarine;
+    text-transform: uppercase;
+}
+
+.our{
+    margin-top: -50px;
+    padding: 250px 0;
+    background: linear-gradient(
+        rgba(0,0,0,0.4),
+        rgba(0,0,0,0.4)
+    ),
+    url(our.jpg);
+    background-position:center center ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+}
+
+.our h2{
+    font-size: 35px;
+    color:#ffffff;
+    text-transform: uppercase;
+}
+
+.ofert-content {
+    display: flex;
+    box-shadow: 0 0 20px rgba(0,0,0,0.2);
+    margin-top: -50px;
+}
+.ofert-1{
+       flex-basis: 25%; 
+}
+.ofert-txt{
+    padding: 37px;
+    text-align: center;
+    background-color: #FFFFFF;
+}
+.ofert-img{
+    height: 230px;
+}
+.ofert-img{
+    width:300px ;
+}
+ .btn-2{
+display:inline-block ;
+margin-top: 10px;
+color: #d8b422;
+text-transform: uppercase;
+}  
+
+.bg{
+    margin-top: -50px;
+    padding: 250px 0;
+    background: linear-gradient(
+        rgba(0,0,0,0.4),
+        rgba(0,0,0,0.4)
+    ),
+    url(bg2.jpg);
+    background-position:center center ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 500px;
+    margin-top: -50px;
+}
+
+.helados{
+    padding: 100px 0;
+    text-align: center;
+}
+.helados h2{
+    font-size: 50px;
+    font-family:'Courier New', Courier, monospace;
+    margin-bottom:150px ;
+    color: black;
+}
+.helados span{
+font-size: 50px;
+font-family: 'Courier New', Courier, monospace;
+display: block;
+margin-bottom: 45px;
+color: black;
+}
+.helados-content{
+    padding: 0 100px;
+    display: flex;
+    justify-content: space-between;
+    text-align: left;
+
+}
+
+.helados-1{
+    margin-right: 50px;
+} 
+.helados-1 h3{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 150x;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+    color: black;
+}
+.helados-txt{
+    display: flex;
+    align-items: center;
+    margin-bottom: 35px;
+}
+
+.helados-txt p{
+    font-size: 17px;
+    color: #f77700;
+}
+
+.precio{
+    font-size: 25px !important;
+    color: #22d859 !important;
+    font-weight: 700;
+    margin-left: 15px;
+} 
+
+.footer{
+    padding: 100px;
+    background-color: rgb(3, 117, 117);
+}
+
+.footer-content{
+    display: flex;
+    justify-content: space-between;
+}
+
+.link ul{
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.link ul li{
+    margin-right: 23px;
+}
+
+.link a{
+    font-size: 18px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+.link a:hover{
+    color: #d8b422;
+}
+#uno{
+    right: 250px;
+    width: 250px;
+}
+
+@media (max-width:991px){
+    .menu{
+        padding: 30px;
+    }
+    .menu label{
+        display: initial;
+    }
+    .menu .navbar{
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background-color: #d0ff00;
+    
+    display: none;
+}
+.menu .navbar ul li a:hover{
+    color: aqua;
+}
+.menu .navbar ul li{
+    width: 100%;
+}
+#menu:checked ~ .navbar{
+    display: initial;
+}
+.header{
+    min-height: 0vh;
+}
+.header-content{
+    padding: 100px 30px;
+}
+.information-content{
+    display: flex;
+    flex-direction: column;
+    margin-top: 0;
+}
+.our{
+    margin-top: 0;
+    padding: 150px 30px;
+}
+.information-2{
+    padding-bottom: 35px;
+    background-color: #FFFFFF;
+}
+
+.ofert-content{
+    margin-top: 0;
+    flex-direction: column;
+    align-items: center;
+}
+.ofert-1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #FFFFFF;
+}
+.ofert-img{
+    order: 2;
+    margin-bottom: 25px;
+    
+}
+.bg{
+    margin-top: 0;
+}
+.helados{
+    padding: 30px;
+}
+.helados-content{
+    padding: 0;
+    flex-direction: column;
+}
+.helados-1{
+    margin: 0;
+}
+
+.footer{
+    padding: 30px;
+}
+.footer-content{
+    flex-direction: column;
+    text-align: center;
+}
+
+.link ul{
+    flex-direction: column;
+}
+.link ul li{
+    margin: 0 0 15px 0;
+}
+
+
+}
+
+
+
+
+
+</style>
+
+
+
+
+
+
+
+</head>
+<body>
+    <header class="header">
+        <div class="menu">
+            <a href="a" class="logo">
+                <img src="WhatsApp Image 2025-10-30 at 05.25.42.jpeg" style="border-radius: 100%">
+            </a>
+            
+            <nav class="navbar">
+                <ul>
+                    <li><a href="Reservaciones.html">Reservaciones</a></li>
+                    <li><a href="Ubicacion.html">Ubicacion</a></li>
+                    <li><a href="Dragon.html">My Dragon Ice</a></li>
+                    <li><a href="Sabores.html">Sabores</a></li>
+                    <li><a href="Contactos.html">Contactos</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="header-content container">
+            <div class="header-txt"></div>
+            <h1>Los mejores helados</h1>
+            <p>
+                <h1>Helados caseros</h1>
+            </p>
+        </div>
+    </header>
+    <section class="information container">
+    <div class="information-content">
+        <div class="information-1">
+            <div class="information.c1">
+                <h3>Reservaciones</h3>
+                <p>
+                    Aqui has tus reservaciones para tu Dragon Ice
+                </p>
+                <a href="Reservaciones.html" class="btn.1">Informacion</a>
+            </div>
+            <div class="information-a1">
+            <img src="Helado2.jpg" alt="">
+            </div>
+        </div>
+        <div class="information-2">
+            <div class="information-b1">
+            <img src="05498664d54894f92c6523c50c1eb9e6.jpg" alt="">
+            </div>
+            <div class="information.c1">
+                <h3>Nosotros</h3>
+                <p>
+                    Somos una empresa pequeña de deliciosos helados caseros, para mas informacion consulte aqui
+                </p>
+                <a href="a" class="btn.1">Informacion</a>
+            </div>
+            
+        </div>
+    </div>
+    </section>
+
+<section class="our">
+<div class="container">
+<h2>Nuestros mejores sabores</h2>
+</div>
+</section>
+
+<section class="oferts">
+    <div class="ofert-content container">
+        <div class="ofert-1">
+            <div class="ofert-txt">
+                <h3>Helados</h3>
+                <p>Deliciosos helados con diferentes sabores de frutas hecho con el aliento de hielo de un dragos >:D</p>
+                <a href="a" class="btn-2"> Informacion</a>
+            </div>
+            <div class="ofert-img">
+            <img src="frutas2.jpeg" alt="">
+            </div>
+        </div>
+
+        <div class="ofert-1">
+            <div class="ofert-img">
+            <img src="frutas2.jpeg" alt="">
+            </div>
+            <div class="ofert-txt">
+                <h3>Cono, vaso o plato?</h3>
+                <p>Deside entre un Dragon Ice en vaso o en cono de galleta >:D</p>
+                <a href="a" class="btn-2"> Informacion</a>
+            </div>
+        </div>
+
+        <div class="ofert-1">
+            <div class="ofert-txt">
+                <h3>Frutas?</h3>
+                <p>Se consigue de mercados comunes para luego ser lavadas, desinfectadas y seleccionadas para dar el mejor Dragon Ice posible</p>
+                <a href="a" class="btn-2"> Informacion</a>
+            </div>
+            <div class="ofert-img">
+            <img src="frutas2.jpeg" alt="">
+            </div>
+        </div>
+
+        <div class="ofert-1">
+            <div class="ofert-img">
+            <img src="frutas2.jpeg" alt="">
+            </div>
+            <div class="ofert-txt">
+                <h3>Ubicacion</h3>
+                <p>Nos encontramos el el Colegio Pedro Poveda en la avenida America, para mas informacion consulte aca</p>
+                <a href="Ubicacion.html" class="btn-2"> Informacion</a>
+            </div>
+            
+        </div>
+    </div>
+
+</section>
+
+<section class="bg"></section>
+
+
+<section class="helados">
+
+    <h2>Menu</h2>
+    <span>Helados caseros</span>
+    <div class="helados-content">
+        <div class="left">
+            <div class="helados-1">
+                <h3>Helado en plato</h3>
+                <div class="helados-txt">
+                    <p>De leche</p>
+                    <p class="precio">
+                        15Bs
+                    </p>
+                </div>
+
+            </div>
+            <div class="helados-1">
+                <h3>Helado en vaso</h3>
+                <div class="helados-txt">
+                    <p>De leche</p>
+                    <p class="precio">
+                        10Bs
+                    </p>
+                </div>
+
+            </div>
+            <div class="helados-1">
+                <h3>Helado en plato</h3>
+                <div class="helados-txt">
+                    <p>De frutilla</p>
+                    <p class="precio">
+                        18Bs
+                    </p>
+                </div>
+
+            </div>
+            <div class="helados-1">
+                <h3>Helado en vaso</h3>
+                <div class="helados-txt">
+                    <p>De frutilla</p>
+                    <p class="precio">
+                        12Bs
+                    </p>
+                </div>
+
+            </div>
+            <div class="helados-1">
+                <h3>Helado en plato</h3>
+                <div class="helados-txt">
+                    <p>De durazno</p>
+                    <p class="precio">
+                        20Bs
+                    </p>
+                </div>
+
+            </div>
+            <div class="helados-1">
+                <h3>Helado en vaso</h3>
+                <div class="helados-txt">
+                    <p>De durazno</p>
+                    <p class="precio">
+                        15Bs
+                    </p>
+                </div>
+
+            </div>
+        </div>
+        <div class="right">
+            <div class="helados-1">
+                <h3>Helado en cono</h3>
+                <div class="helados-txt">
+                    <p>De leche</p>
+                    <p class="precio">
+                        5Bs
+                    </p>
+                </div>
+
+            </div>
+            <div class="helados-1">
+                <h3>Helado en cono</h3>
+                <div class="helados-txt">
+                    <p>De frutilla</p>
+                    <p class="precio">
+                        7Bs
+                    </p>
+                </div>
+
+            </div>
+            <div class="helados-1">
+                <h3>Helado en cono</h3>
+                <div class="helados-txt">
+                    <p>De durazno</p>
+                    <p class="precio">
+                        8Bs
+                    </p>
+                </div>
+
+            </div>
+            <div class="helados-1">
+                <h3>Helado en cono</h3>
+                <div class="helados-txt">
+                    <p>De café</p>
+                    <p class="precio">
+                        7Bs
+                    </p>
+                </div>
+
+            </div>
+            <div class="helados-1">
+                <h3>Helado en vaso</h3>
+                <div class="helados-txt">
+                    <p>De café</p>
+                    <p class="precio">
+                        19Bs
+                    </p>
+                </div>
+
+            </div>
+            <div class="helados-1">
+                <h3>Helado en plato</h3>
+                <div class="helados-txt">
+                    <p>De café</p>
+                    <p class="precio">
+                        25Bs
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<footer class="footer">
+<div class="footer-content container">
+    <div class="link">
+        <samp class="logo">
+            <img src="WhatsApp Image 2025-10-30 at 05.25.42.jpeg" style="border-radius: 100%" id="uno">
+            
+        </samp>
+    </div>
+    <div class="link">
+        <ul>
+           <li><a href="Reservaciones.html">Reservaciones</a></li>
+           <li><a href="Ubicacion.html">Ubicacion</a></li>
+           <li><a href="Dragon.html">My Dragon Ice</a></li>
+           <li><a href="Sabores.html">Sabores</a></li>
+           <li><a href="Contactos.html">Contactos</a></li> 
+        </ul>
+    </div>
+</div>
+</footer>
+</body>
+</html>

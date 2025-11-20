@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        /*
+        var c=1;
+       parseInt(c);
+       for(let i =1; i<=20; i++){
+        alert(c)
+        c=c+1;
+       }
+       */
+       
+       
+       
+       
+       
+       function contadorDeNumerosPares() {
+  let t = 0;
+  let n = 0;
+
+  
+  while (true) {
+    
+    const entrada = prompt("Ingresa un número:");
+    n = parseInt(entrada);
+    if (isNaN(n)) {
+      alert("Por favor, ingresa un número válido.");
+      break;
+    }
+    if (n % 2 !== 0) {
+      break;
+    } else {
+      t++; 
+    }
+  }
+  alert(`Ingresaste ${t} números pares.`);
+}
+contadorDeNumerosPares();
+
+
+var nombre=prompt("nombre");
+var pares="";
+for(var i=0;i<=nombre.length;i++){
+  if(i%2==0){
+    pares=pares+nombre[i].toUpperCase();
+  }
+}
+var minu=nombre.toLowerCase();
+alert(pares+minu)
+
+var nombre="PEDRO POVEDA"
+alert (nombre.indexOf("O"))
+alert (nombre.lastIndexOf("O"))
+
+var frase=prompt("Escribe una frase")
+var cont=0
+for(var i=0;i<frase.length;i++){
+if(frase[i]==="a"){
+  cont++;
+}
+}
+alert("La letra a aparece " +cont+ " veces en la frase");
+
+var a=["Rosa","Jose","Pepe"];
+var a1=["Roberto","Carla","Matilde"];
+var unir=a.concat(a1)
+alert(unir);
+var eliminar=unir.shift("");
+alert(unir);
+var aña=unir.push(eliminar);
+alert(unir);
+
+var tilin= prompt("ingresa una palabra");
+alert(tilin.substring(3));
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

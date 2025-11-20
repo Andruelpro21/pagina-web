@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dragon Ice</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+     .logo {
+    width: 150px;
+    height: 150px;
+    border-radius: 100%;
+   }
+    body {
+      text-align: center;
+      padding: 50px;
+      background: linear-gradient(to bottom right, #001f3f, #0074d9, #7fdbff);
+      color: rgb(255, 255, 255);
+      font-family: 'Press Start 2P', cursive;
+      display: grid;
+      grid-template-areas:
+        "menu"
+        "contenido"
+        "footer";
+      grid-template-rows: auto 1fr auto;
+      justify-items: center;
+      min-height: 100vh;
+    }
+
+    h1 {
+      color: #ffffff;
+      text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.6);
+      font-size: 40px;
+      margin-bottom: 20px;
+    }
+
+    nav.menu {
+      background: rgba(0, 17, 164, 0.8);
+      border: 3px dashed #1250a7af;
+      border-radius: 20px;
+      padding: 15px;
+      margin-bottom: 30px;
+      box-shadow: 8px 8px 15px #0000004d;
+      transition: all 0.3s ease;
+      display: inline-block;
+    }
+
+    nav.menu:hover {
+      background-color: #2e5e6d;
+    }
+
+    nav.menu li {
+      list-style: none;
+      display: inline-block;
+      margin: 10px;
+    }
+
+    nav.menu a {
+      font-family: 'Press Start 2P', cursive;
+      font-size: 14px;
+      color: #ffffff;
+      background-color: #003366;
+      padding: 8px 12px;
+      border-radius: 12px;
+      border: 2px solid #05193f;
+      text-decoration: none;
+    }
+
+    nav.menu a:hover {
+      background-color: #00bfff;
+      color: #003366;
+    }
+
+    section {
+      margin: 40px 0;
+      width: 80%;
+      background: rgba(255, 255, 255, 0.15);
+      border-radius: 15px;
+      padding: 20px;
+      box-shadow: 0 4px 8px #0000004b;
+    }
+
+    section h2 {
+      color: #aeeaff;
+      margin-bottom: 10px;
+      font-size: 20px;
+    }
+
+    section p, section li {
+      font-size: 16px;
+      margin: 5px 0;
+    }
+
+    ul {
+      padding: 0;
+    }
+
+    li {
+      list-style-type: none;
+    }
+
+    .carusel {
+      display: flex;
+      animation: scroll 15s linear infinite;
+      padding: 10px;
+      overflow: hidden;
+      justify-content: center;
+    }
+
+    .carusel img {
+      width: 150px;
+      height: 150px;
+      margin-right: 15px;
+      border-radius: 10px;
+      object-fit: cover;
+    }
+
+    @keyframes scroll {
+      0% {
+        transform: translateX(0);
+      }
+      100% {
+        transform: translateX(-50%);
+      }
+    }
+
+    footer {
+      grid-area: footer;
+      margin-top: 40px;
+      font-size: 14px;
+      color: #fff;
+      background-color: rgba(0, 0, 0, 0.4);
+      padding: 15px;
+      border-radius: 10px;
+      width: 100%;
+      text-align: center;
+    }
+
+    @media (max-width: 900px) {
+      body {
+        background: linear-gradient(to bottom, #004080, #008cff, #aeeaff);
+        padding: 20px;
+      }
+      h1 {
+        font-size: 28px;
+      }
+      section {
+        width: 95%;
+      }
+    }
+  </style>
+</head>
+
+<body>
+<div class="logo">
+        <img src="dragice.jpg" style="border-radius: 100%"
+          alt="Logo de Dragon Ice" width="150" height="150">
+ </div>
+  <h1>Dragon Ice</h1>
+  <h1>Disfruta de nuestros deliciosos helados</h1>
+
+  <nav class="menu">
+    <ul>
+      <li><a href="Sabores.html">Sabores</a></li>
+      <li><a href="Tamano.html">Envases</a></li>
+      <li><a href="Topping.html">Toppings</a></li>
+      <li><a href="Precios.html">Precios</a></li>
+      <li><a href="Horariodeatencion.html">Horarios</a></li>
+    </ul>
+  </nav>
+ <section class="carusel">
+    <img src="durazno.jpg" alt="Durazno">
+    <img src="frutilla.jpg" alt="Frutilla">
+    <img src="canela.jpg" alt="Canela">
+    <img src="platano.jpg" alt="Plátano">
+    <img src="chocolate.jpg" alt="Canela">
+    <img src="leche.jpg" alt="Plátano">
+  </section>
+  <section id="toppings">
+    <img src="topping.jpg" alt="Toppings" width="200">
+    <h2>Escoge los toppings que desees</h2>
+    <p>Chocolate, jalea de frutilla, caramelo, chispitas, frutas, crema, coco rallado, marshmallow, galleta wafer...</p>
+  </section>
+
+  <section id="tamanos">
+    <img src="conooo.jpg" alt="Cono" width="150">
+    <img src="vaso.jpg" alt="Vaso" width="150">
+    <img src="platoo.jpg" alt="Plato" width="150">
+    <h2>Diferentes tamaños disponibles</h2>
+    <p>Conos, vasos de plástico o vidrio, platos desechables.</p>
+  </section>
+
+  <section id="precios">
+    <img src="cobro.jpg" alt="Caja de cobro" width="200">
+    <h2>Precios</h2>
+    <p> Cono: 5Bs<br>Vaso: 6Bsr<br>Plato: 10Bsbr<br></p>
+  </section>
+
+  <section id="horarios">
+    <h2>Días y horarios de atención</h2>
+    <p>
+      Lunes a Viernes: 10:00 AM - 9:00 PM <br>
+      Sábado y Domingo: 10:00 AM - 5:30 PM
+    </p>
+  </section>
+
+
+
+  <footer>
+    <p>Sean bienvenidos a nuestra presentación. Disfruta de un rico helado frío para los días calurosos. ¡Te atenderemos como mereces!</p>
+  </footer>
+
+</body>
+</html>

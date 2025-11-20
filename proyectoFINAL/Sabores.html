@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .body{
+            display: grid ;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: 100px auto 50px;
+            gap: 10px;
+        }
+        .David{
+            grid-column: 1 / span 3;
+            grid-row: 1 / 2;
+            border-radius: 30px;
+        }
+        .imagen1{
+            display: grid;
+            grid-column: 1 / 2;
+            border: 50px solid rgb(1, 25, 83);
+            height: max-content;
+            max-width: max-content;
+        }
+        .imagen2{
+            display: grid;
+            grid-column: 2 / 3;
+            border: 10px solid rgb(9, 52, 151);
+            height: max-content;
+            max-width: max-content;
+        }
+        .imagen3{
+            grid-column: 3 / 4;
+            border: 10px solid rgb(58, 89, 161);
+            height: max-content;
+            max-width: max-content;
+        }
+        .imagen4{
+            grid-column: 1 / 2;
+            border: 10px solid rgb(0, 11, 37);
+            height: max-content;
+            max-width: max-content;
+        }
+        .imagen5{
+            grid-column: 2 / 3;
+            border: 10px solid rgb(45, 71, 131);
+            height: max-content;
+            max-width: max-content;
+        }
+        .imagen6{
+            grid-column: 3 / 4;
+            border: 10px solid rgb(8, 29, 77);
+            height: max-content;
+            max-width: max-content;
+        }
+
+    </style>
+</head>
+<body>
+    <section class="David">Nuestros sabores que te refrescaran</section>
+    <div class="imagen1">
+    <img src="durazno.jpg" alt="" class="imagen1"><p>👩‍🍳 Preparación: <br>
+        🥄 Paso 1: Preparar los duraznos <br>
+Pela los duraznos (opcional; si están muy maduros, la piel sale fácil). <br>
+Córtalos en cubos y colócalos en un bowl. <br>
+Añade 2 cucharadas de azúcar y mezcla. <br>
+Deja reposar 10 minutos para que suelten jugo. <br>
+Tritura con tenedor o licúa según la textura que te guste (puré fino o trozos). <br> </p> 
+    </div>
+    <div class="imagen2">   
+    <img src="frutilla.jpg" alt="" class="imagen2"><p></p>
+    </div>
+    <div class="imagen3">
+    <img src="canela.jpg" alt="" class="imagen3">
+    </div>
+    <div class="imagen4">
+    <img src="leche.jpg" alt="" class="imagen4">
+    </div>
+    <div class="imagen5">
+    <img src="cafe.jpg" alt="" class="imagen5">
+    </div>
+    <div class="imagen6">
+    <img src="platano.jpg" alt="" class="imagen6">
+    </div>
+</body>
+</html>
